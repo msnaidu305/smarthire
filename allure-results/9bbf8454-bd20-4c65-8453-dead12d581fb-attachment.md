@@ -1,0 +1,79 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ui\login.spec.js >> Verify user login
+- Location: tests\ui\login.spec.js:7:1
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: locator('button[type="button"]') resolved to 3 elements:
+    1) <button type="button" tabindex="-1" class="absolute right-4 top-1/2 -translate-y-1/2 transition-colors bg-transparent border-none p-0 cursor-pointer text-[rgba(126,46,111,1)] hover:opacity-80">…</button> aka getByRole('button').filter({ hasText: /^$/ })
+    2) <button type="button" class="font-normal text-[clamp(12px,2vh,14px)] text-[#7E2E6F] text-right self-end bg-transparent border-none p-0 cursor-pointer hover:underline mt-1">Forgot password?</button> aka getByRole('button', { name: 'Forgot password?' })
+    3) <button type="button" class="w-full h-[40px] rounded-lg font-medium text-[clamp(12px,2vh,14px)] text-[#FAFAFA] flex items-center justify-center transition-colors duration-150 mt-2 disabled:opacity-90 disabled:cursor-not-allowed bg-[rgba(88,22,69,1)] hover:bg-[rgba(74,18,58,1)] active:bg-[rgba(88,22,69,1)] cursor-pointer">Log in</button> aka getByRole('button', { name: 'Log in' })
+
+Call log:
+  - waiting for locator('button[type="button"]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - generic [ref=e11]:
+      - heading "Welcome to SmartHire" [level=1] [ref=e12]
+      - paragraph [ref=e13]: AI-powered screening connected to your ATS
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]: Work Email
+      - generic [ref=e17]:
+        - img
+        - textbox "Email" [ref=e18]: msn1_qa@yopmail.com
+    - generic [ref=e19]:
+      - generic [ref=e20]: Password
+      - generic [ref=e21]:
+        - img
+        - textbox "Password" [active] [ref=e22]: Test@12345
+        - button [ref=e23] [cursor=pointer]:
+          - img [ref=e24]
+      - button "Forgot password?" [ref=e27] [cursor=pointer]
+    - button "Log in" [ref=e28] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | class LoginPage {
+  2  | 
+  3  |     constructor(page) {
+  4  |         this.page = page;
+  5  |         this.emailTextbox = page.locator('input[type="email"]');
+  6  |         this.passwordTextbox = page.locator('input[type="password"]');
+  7  |         this.loginButton = page.locator('button[type="button"]');
+  8  |     }
+  9  | 
+  10 |     async navigate(url) {
+  11 |         await this.page.goto(url);
+  12 |     }
+  13 | 
+  14 |     async login(email, password) {
+  15 | 
+  16 |         await this.emailTextbox.fill(email);
+  17 | 
+  18 |         await this.passwordTextbox.fill(password);
+  19 | 
+> 20 |         await this.loginButton.click();
+     |                                ^ Error: locator.click: Error: strict mode violation: locator('button[type="button"]') resolved to 3 elements:
+  21 |     }
+  22 | }
+  23 | 
+  24 | module.exports = LoginPage;
+```

@@ -1,0 +1,12 @@
+{
+  tokens: {
+    access: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgwODExNjU0LCJpYXQiOjE3ODA4MTA3NTQsImp0aSI6IjQ2MzM2ZTQxZTkwZjRiNjBiZmJmZGE2MTI1YWFhNWM3IiwidXNlcl9pZCI6MTN9.hRgN8vx9WTZ8ExmmKDo6SXtvbP_L79jNR8wU-cL5Gq4',
+    refresh: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4MDg5NzE1NCwiaWF0IjoxNzgwODEwNzU0LCJqdGkiOiIzNGUwZDQ2MTBlNjM0ZWRiOWE2NjYxNjE2NjU0MWNhMSIsInVzZXJfaWQiOjEzfQ.0ifUKYDvfAvDuq5Sali6K4Nxu1lGp3Gm0pR58MYugnQ'
+  },
+  user: { id: '13', email: 'msn1_qa@yopmail.com', role: 'RECRUITER' },
+  tenant: {
+    id: '35d60d38-cc85-4d16-89f4-16d4768fab7e',
+    name: 'PrediQt',
+    slug: 'prediqt'
+  }
+}
