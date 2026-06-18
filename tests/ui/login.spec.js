@@ -20,7 +20,7 @@ test('Verify user login', async ({page}) => {
         //loginData.invalidUser.password
         logindata.email,
         logindata.password
-      
+     
     );
   
    await expect(page).toHaveTitle('Smart-Hire');
