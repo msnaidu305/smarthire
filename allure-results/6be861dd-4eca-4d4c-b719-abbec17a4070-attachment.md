@@ -1,0 +1,652 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ui\screning.spec.js >> Verify Screening tab
+- Location: tests\ui\screning.spec.js:17:1
+
+# Error details
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected: "https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=10"
+Received: "https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=50"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+    - unexpected value "https://dev.smarthire.rezolvecloud.com/screening"
+    12 × unexpected value "https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=50"
+
+```
+
+```yaml
+- region "Notifications alt+T"
+- link:
+  - /url: /
+- link:
+  - /url: /screening
+- link:
+  - /url: /jobs
+- link:
+  - /url: /interview-room
+- main:
+  - button "Expand sidebar"
+  - textbox "Search jobs, candidates..."
+  - heading "AI Screening Results" [level=1]
+  - paragraph: Candidates screened automatically from connected sources
+  - text: "Last Synced: 1 min ago AI PROPOSED 48 INVITATIONS SENT 2 INTERVIEW COMPLETED 8 LIVE INTERVIEW -"
+  - button "All 59"
+  - button "Proposed 48"
+  - button "Interviewing 2"
+  - button "Evaluated 8"
+  - textbox "Search"
+  - button "Filter"
+  - table:
+    - rowgroup:
+      - row "Candidate Role Client AI Score AI Status":
+        - columnheader "Candidate"
+        - columnheader "Role"
+        - columnheader "Client"
+        - columnheader "AI Score"
+        - columnheader "AI Status"
+        - columnheader
+    - rowgroup:
+      - 'row "KM Kristen Mahoney Applicant ID: 2430540 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "KM Kristen Mahoney Applicant ID: 2430540"':
+          - text: KM
+          - paragraph: Kristen Mahoney
+          - paragraph: "Applicant ID: 2430540"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "EO Emily Ocean Applicant ID: 2430571 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "EO Emily Ocean Applicant ID: 2430571"':
+          - text: EO
+          - paragraph: Emily Ocean
+          - paragraph: "Applicant ID: 2430571"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RS Rachel Schechter Applicant ID: 2448433 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "RS Rachel Schechter Applicant ID: 2448433"':
+          - text: RS
+          - paragraph: Rachel Schechter
+          - paragraph: "Applicant ID: 2448433"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SJ Shannon Jordan Applicant ID: 2448461 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "SJ Shannon Jordan Applicant ID: 2448461"':
+          - text: SJ
+          - paragraph: Shannon Jordan
+          - paragraph: "Applicant ID: 2448461"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MJ Miriam Jaffa Applicant ID: 2448582 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "MJ Miriam Jaffa Applicant ID: 2448582"':
+          - text: MJ
+          - paragraph: Miriam Jaffa
+          - paragraph: "Applicant ID: 2448582"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "CE Camille Espinoza Applicant ID: 2507295 Licensed Remote Therapist BetterHelp 82% AI Match AI Proposed"':
+        - 'cell "CE Camille Espinoza Applicant ID: 2507295"':
+          - text: CE
+          - paragraph: Camille Espinoza
+          - paragraph: "Applicant ID: 2507295"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "82% AI Match"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MA Maya Arth Applicant ID: 2430556 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "MA Maya Arth Applicant ID: 2430556"':
+          - text: MA
+          - paragraph: Maya Arth
+          - paragraph: "Applicant ID: 2430556"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AG Anne Gialanella Applicant ID: 2430577 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "AG Anne Gialanella Applicant ID: 2430577"':
+          - text: AG
+          - paragraph: Anne Gialanella
+          - paragraph: "Applicant ID: 2430577"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "JN Judith NBC-HWC Applicant ID: 2430578 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "JN Judith NBC-HWC Applicant ID: 2430578"':
+          - text: JN
+          - paragraph: Judith NBC-HWC
+          - paragraph: "Applicant ID: 2430578"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AV Ana Vargas Applicant ID: 2430583 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "AV Ana Vargas Applicant ID: 2430583"':
+          - text: AV
+          - paragraph: Ana Vargas
+          - paragraph: "Applicant ID: 2430583"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MG Michael Garber Applicant ID: 2448430 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "MG Michael Garber Applicant ID: 2448430"':
+          - text: MG
+          - paragraph: Michael Garber
+          - paragraph: "Applicant ID: 2448430"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AS Alicia Sellitti Applicant ID: 2448564 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "AS Alicia Sellitti Applicant ID: 2448564"':
+          - text: AS
+          - paragraph: Alicia Sellitti
+          - paragraph: "Applicant ID: 2448564"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "TM Tyra Moore Applicant ID: 2448580 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "TM Tyra Moore Applicant ID: 2448580"':
+          - text: TM
+          - paragraph: Tyra Moore
+          - paragraph: "Applicant ID: 2448580"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "EM Edward McCurty Applicant ID: 2448583 Licensed Remote Therapist BetterHelp 78% AI Proposed"':
+        - 'cell "EM Edward McCurty Applicant ID: 2448583"':
+          - text: EM
+          - paragraph: Edward McCurty
+          - paragraph: "Applicant ID: 2448583"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "78%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "KD Kenneth Doyle Applicant ID: 2584984 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "KD Kenneth Doyle Applicant ID: 2584984"':
+          - text: KD
+          - paragraph: Kenneth Doyle
+          - paragraph: "Applicant ID: 2584984"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SC Schwanna Cockerham-Qualls Applicant ID: 2430543 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "SC Schwanna Cockerham-Qualls Applicant ID: 2430543"':
+          - text: SC
+          - paragraph: Schwanna Cockerham-Qualls
+          - paragraph: "Applicant ID: 2430543"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "WD Wright Doss Applicant ID: 2448440 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "WD Wright Doss Applicant ID: 2448440"':
+          - text: WD
+          - paragraph: Wright Doss
+          - paragraph: "Applicant ID: 2448440"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "TB Tiffany Burt Applicant ID: 2448445 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "TB Tiffany Burt Applicant ID: 2448445"':
+          - text: TB
+          - paragraph: Tiffany Burt
+          - paragraph: "Applicant ID: 2448445"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "JL Jacqueline Lipscomb Applicant ID: 2448565 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "JL Jacqueline Lipscomb Applicant ID: 2448565"':
+          - text: JL
+          - paragraph: Jacqueline Lipscomb
+          - paragraph: "Applicant ID: 2448565"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MH Mollie Hart Applicant ID: 2448591 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "MH Mollie Hart Applicant ID: 2448591"':
+          - text: MH
+          - paragraph: Mollie Hart
+          - paragraph: "Applicant ID: 2448591"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RLF Ronald La Fleur Applicant ID: 2448575 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "RLF Ronald La Fleur Applicant ID: 2448575"':
+          - text: RLF
+          - paragraph: Ronald La Fleur
+          - paragraph: "Applicant ID: 2448575"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AY Andrea Yudell Applicant ID: 2448588 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "AY Andrea Yudell Applicant ID: 2448588"':
+          - text: AY
+          - paragraph: Andrea Yudell
+          - paragraph: "Applicant ID: 2448588"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "DF Dee Foreman Applicant ID: 2507288 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "DF Dee Foreman Applicant ID: 2507288"':
+          - text: DF
+          - paragraph: Dee Foreman
+          - paragraph: "Applicant ID: 2507288"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "BD Benjamin Dukes Applicant ID: 2507236 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "BD Benjamin Dukes Applicant ID: 2507236"':
+          - text: BD
+          - paragraph: Benjamin Dukes
+          - paragraph: "Applicant ID: 2507236"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "JW John Weibel Applicant ID: 2507310 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "JW John Weibel Applicant ID: 2507310"':
+          - text: JW
+          - paragraph: John Weibel
+          - paragraph: "Applicant ID: 2507310"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "CT Cyndi Turner Applicant ID: 2507291 Licensed Remote Therapist BetterHelp 74% AI Proposed"':
+        - 'cell "CT Cyndi Turner Applicant ID: 2507291"':
+          - text: CT
+          - paragraph: Cyndi Turner
+          - paragraph: "Applicant ID: 2507291"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "74%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SM Sabrina Mackey Applicant ID: 2581470 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "SM Sabrina Mackey Applicant ID: 2581470"':
+          - text: SM
+          - paragraph: Sabrina Mackey
+          - paragraph: "Applicant ID: 2581470"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MM Megan Munzert Applicant ID: 2448443 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "MM Megan Munzert Applicant ID: 2448443"':
+          - text: MM
+          - paragraph: Megan Munzert
+          - paragraph: "Applicant ID: 2448443"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "KL Kashawna LICSW Applicant ID: 2448462 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "KL Kashawna LICSW Applicant ID: 2448462"':
+          - text: KL
+          - paragraph: Kashawna LICSW
+          - paragraph: "Applicant ID: 2448462"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MM Marybeth Mangas Applicant ID: 2448468 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "MM Marybeth Mangas Applicant ID: 2448468"':
+          - text: MM
+          - paragraph: Marybeth Mangas
+          - paragraph: "Applicant ID: 2448468"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MS Melissa Scarboro Applicant ID: 2448463 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "MS Melissa Scarboro Applicant ID: 2448463"':
+          - text: MS
+          - paragraph: Melissa Scarboro
+          - paragraph: "Applicant ID: 2448463"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SG Susan Gross Applicant ID: 2448467 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "SG Susan Gross Applicant ID: 2448467"':
+          - text: SG
+          - paragraph: Susan Gross
+          - paragraph: "Applicant ID: 2448467"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MS Melba Sanchez Applicant ID: 2448573 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "MS Melba Sanchez Applicant ID: 2448573"':
+          - text: MS
+          - paragraph: Melba Sanchez
+          - paragraph: "Applicant ID: 2448573"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SJ Synthia Johnson Applicant ID: 2448596 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "SJ Synthia Johnson Applicant ID: 2448596"':
+          - text: SJ
+          - paragraph: Synthia Johnson
+          - paragraph: "Applicant ID: 2448596"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RG Reed Gehring Applicant ID: 2448597 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "RG Reed Gehring Applicant ID: 2448597"':
+          - text: RG
+          - paragraph: Reed Gehring
+          - paragraph: "Applicant ID: 2448597"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RB Roberta Boam Applicant ID: 2525397 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "RB Roberta Boam Applicant ID: 2525397"':
+          - text: RB
+          - paragraph: Roberta Boam
+          - paragraph: "Applicant ID: 2525397"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "TT Thomas Turnbaugh Applicant ID: 2525851 Licensed Remote Therapist BetterHelp 72% AI Proposed"':
+        - 'cell "TT Thomas Turnbaugh Applicant ID: 2525851"':
+          - text: TT
+          - paragraph: Thomas Turnbaugh
+          - paragraph: "Applicant ID: 2525851"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "72%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "WC Will Canu Applicant ID: 2584966 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "WC Will Canu Applicant ID: 2584966"':
+          - text: WC
+          - paragraph: Will Canu
+          - paragraph: "Applicant ID: 2584966"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "MM Megan Mancini Applicant ID: 2584969 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "MM Megan Mancini Applicant ID: 2584969"':
+          - text: MM
+          - paragraph: Megan Mancini
+          - paragraph: "Applicant ID: 2584969"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AD Anne DeGirolamo Applicant ID: 2448452 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "AD Anne DeGirolamo Applicant ID: 2448452"':
+          - text: AD
+          - paragraph: Anne DeGirolamo
+          - paragraph: "Applicant ID: 2448452"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RP Renee Perrier Applicant ID: 2448549 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "RP Renee Perrier Applicant ID: 2448549"':
+          - text: RP
+          - paragraph: Renee Perrier
+          - paragraph: "Applicant ID: 2448549"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "LG Lisa Ghali Applicant ID: 2448552 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "LG Lisa Ghali Applicant ID: 2448552"':
+          - text: LG
+          - paragraph: Lisa Ghali
+          - paragraph: "Applicant ID: 2448552"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "AL Alexander Lupis Applicant ID: 2524454 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "AL Alexander Lupis Applicant ID: 2524454"':
+          - text: AL
+          - paragraph: Alexander Lupis
+          - paragraph: "Applicant ID: 2524454"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "DC Douglas Cohen Applicant ID: 2524446 Licensed Remote Therapist BetterHelp 62% AI Proposed"':
+        - 'cell "DC Douglas Cohen Applicant ID: 2524446"':
+          - text: DC
+          - paragraph: Douglas Cohen
+          - paragraph: "Applicant ID: 2524446"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "TJ Todd Johnson Applicant ID: 2110702 Licensed Remote Therapist BetterHelp 62% Invitation Sent"':
+        - 'cell "TJ Todd Johnson Applicant ID: 2110702"':
+          - text: TJ
+          - paragraph: Todd Johnson
+          - paragraph: "Applicant ID: 2110702"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "62%"
+        - cell "Invitation Sent"
+        - cell:
+          - button "Send Invite"
+      - 'row "AS Abbey Stickney Applicant ID: 2448470 Licensed Remote Therapist BetterHelp 58% AI Proposed"':
+        - 'cell "AS Abbey Stickney Applicant ID: 2448470"':
+          - text: AS
+          - paragraph: Abbey Stickney
+          - paragraph: "Applicant ID: 2448470"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "58%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "SM Stephen Moyer Applicant ID: 2094808 Licensed Remote Therapist BetterHelp 55% Interview Completed"':
+        - 'cell "SM Stephen Moyer Applicant ID: 2094808"':
+          - text: SM
+          - paragraph: Stephen Moyer
+          - paragraph: "Applicant ID: 2094808"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "55%"
+        - cell "Interview Completed"
+        - cell:
+          - button "Send Invite"
+      - 'row "RB Rhonda Barnes Applicant ID: 2448447 Licensed Remote Therapist BetterHelp 52% AI Proposed"':
+        - 'cell "RB Rhonda Barnes Applicant ID: 2448447"':
+          - text: RB
+          - paragraph: Rhonda Barnes
+          - paragraph: "Applicant ID: 2448447"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "52%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "EB Erica Barnes Applicant ID: 2448571 Licensed Remote Therapist BetterHelp 52% AI Proposed"':
+        - 'cell "EB Erica Barnes Applicant ID: 2448571"':
+          - text: EB
+          - paragraph: Erica Barnes
+          - paragraph: "Applicant ID: 2448571"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "52%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+      - 'row "JB Joselyn Barfield-yates Applicant ID: 2525444 Licensed Remote Therapist BetterHelp 42% AI Proposed"':
+        - 'cell "JB Joselyn Barfield-yates Applicant ID: 2525444"':
+          - text: JB
+          - paragraph: Joselyn Barfield-yates
+          - paragraph: "Applicant ID: 2525444"
+        - cell "Licensed Remote Therapist"
+        - cell "BetterHelp"
+        - cell "42%"
+        - cell "AI Proposed"
+        - cell:
+          - button "Send Invite"
+  - text: 0 of 50 row(s) selected. Rows per page
+  - button "50"
+  - text: Page 1 of 2
+  - button [disabled]
+  - button [disabled]
+  - button
+  - button
+  - heading "Why this score?" [level=3]
+  - paragraph: Select a candidate from the table to see a detailed breakdown of their AI evaluation, including technical depth, communication clarity, and problem-solving patterns.
+  - text: "Select a row to pull data Live: AI Identification"
+  - paragraph: Top Ranked
+  - text: Proactive Signal New high-scoring candidate detected KM Kristen Mahoney Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results EO Emily Ocean Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results RS Rachel Schechter Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results SJ Shannon Jordan Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results MJ Miriam Jaffa Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results CE Camille Espinoza Licensed Remote Therapist 82% MATCH MEDIUM CONFIDENCE Results
+- button "Help Us Improve"
+```
+
+# Test source
+
+```ts
+  1  | const {test, expect}= require('@playwright/test');
+  2  | 
+  3  | const LoginPage = require('../../pages/LoginPage');
+  4  | const ScreeningPage = require('../../pages/ScreeningPage');
+  5  | const logindata=require('../../utils/env.js');
+  6  | 
+  7  | 
+  8  | test.beforeEach(async ({page}) => {
+  9  |     const loginPage = new LoginPage(page);
+  10 |     await loginPage.navigate('https://dev.smarthire.rezolvecloud.com/login');
+  11 |     await loginPage.login(
+  12 |         logindata.email,
+  13 |         logindata.password     
+  14 |     );
+  15 | });
+  16 | 
+  17 | test('Verify Screening tab', async ({page}) => {
+  18 |     const loginPage = new LoginPage(page);
+  19 |     const screeningPage = new ScreeningPage(page);
+  20 |     await screeningPage.screening();
+  21 | 
+> 22 |     await expect(page).toHaveURL('https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=10')    ;
+     |                        ^ Error: expect(page).toHaveURL(expected) failed
+  23 | });
+```

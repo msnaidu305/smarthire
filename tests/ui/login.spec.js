@@ -23,7 +23,7 @@ test('Verify user login', async ({page}) => {
      
     );
   
-   await expect(page).toHaveTitle('Smart-Hire');
+   await expect(page).toHaveTitle('Hire Velocity');
    //await expect(page.locator('text=Welcome to Smart-Hire')).toBeVisible(); 
    await expect(page).toHaveURL('https://dev.smarthire.rezolvecloud.com/');     
 });
