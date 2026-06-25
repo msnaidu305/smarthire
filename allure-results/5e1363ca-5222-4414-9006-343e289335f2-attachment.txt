@@ -1,0 +1,16 @@
+{
+  tokens: {
+    access: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgyMzA3NTcxLCJpYXQiOjE3ODIzMDY2NzEsImp0aSI6ImIxNGUzNTAwNTkyYTQ1ZTNiYmRlNWZlNjU1MjZhY2U4IiwidXNlcl9pZCI6MTZ9.-DrcupJ9jyEZfBUG6UsOUrOFbsq4lDRUqGhLGrWzIZs',
+    refresh: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4MjM5MzA3MSwiaWF0IjoxNzgyMzA2NjcxLCJqdGkiOiI1MjAxOGE0NzgxNmE0MjZjOWE1OGI4YTQyYTlhOWFhNCIsInVzZXJfaWQiOjE2fQ.2DvSjqaHQKLSqWS9gPkhV59AFgN8G76aPp2eVq-0vMs'
+  },
+  user: {
+    id: '16',
+    email: 'sanyasinaidu@rezolve.com',
+    role: 'COMPANY_ADMIN'
+  },
+  tenant: {
+    id: '35d60d38-cc85-4d16-89f4-16d4768fab7e',
+    name: 'PrediQt',
+    slug: 'prediqt'
+  }
+}

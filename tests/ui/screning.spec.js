@@ -19,5 +19,5 @@ test('Verify Screening tab', async ({page}) => {
     const screeningPage = new ScreeningPage(page);
     await screeningPage.screening();
 
-    await expect(page).toHaveURL('https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=10')    ;
+    await expect(page).toHaveURL('https://dev.smarthire.rezolvecloud.com/screening?tab=All&page=1&rows=50')    ;
 });
