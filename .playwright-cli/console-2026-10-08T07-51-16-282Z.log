@@ -1,0 +1,126 @@
+[   24691ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   24693ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   24693ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   57795ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   57796ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   64293ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[   72933ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  154076ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  184899ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  186661ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  188845ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  189207ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[  189208ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[  194750ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  202193ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  203848ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  208065ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  210803ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  212651ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  217640ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  226350ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  226655ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[  231708ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6379756ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/auth/logout/:0
+[ 6380511ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6380511ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6399739ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://dev.sre-shaz-lo.rezolvecloud.com/login:0
+[ 6399739ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://dev.sre-shaz-lo.rezolvecloud.com/login:0
+[ 6441836ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/auth/login/:0
+[ 6454859ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6548859ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6548866ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6551740ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6554178ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6556001ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6556349ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[ 6556350ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[ 6557469ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6561549ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6564900ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6590855ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6598095ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6600814ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6636010ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6638684ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6642220ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6646983ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6647487ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6649529ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6673994ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6673996ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6761120ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6765286ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6840744ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6846163ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6846174ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6847803ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6849354ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6849363ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 6850580ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7011041ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7024293ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7024294ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7026783ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7030647ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7150280ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7159111ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sh-api-dev.sh-dev.svc.cluster.local:8000/api/v1/white-label/assets/media/white_label/35d60d38-cc85-4d16-89f4-16d4768fab7e/logo_light-84b28590.jpg:0
+[ 7176199ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[ 7176199ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[ 7230829ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[ 7230830ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[ 7235562ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://dev.sre-shaz-lo.rezolvecloud.com/integrations/connections:0
+[ 7361873ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integrations/mapping/?integration=GHL&model=contact&direction=INBOUND:0
+[ 7649896ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integrations/workflows/7afe0cf5-6d85-4cff-885b-92a3764a2f30/:0
+[ 7649899ms] [ERROR] Failed to update workflow AxiosError: Request failed with status code 400
+    at an (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:9805)
+    at XMLHttpRequest.g (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:14993) @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:336
+[ 8261900ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/jobs/115/question-bank/:0
+[ 8702951ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integrations/workflows/667cc1ca-8d93-4b09-9e85-76195e778ee9/:0
+[ 8702954ms] [ERROR] Failed to update workflow AxiosError: Request failed with status code 400
+    at an (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:9805)
+    at XMLHttpRequest.g (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:14993) @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:336
+[ 8794669ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integrations/workflows/667cc1ca-8d93-4b09-9e85-76195e778ee9/publish/:0
+[ 8794671ms] [ERROR] Failed to publish workflow AxiosError: Request failed with status code 400
+    at an (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:9805)
+    at XMLHttpRequest.g (https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:3:14993) @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:336
+[ 9167808ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/interviews/screening/3701/:0
+[ 9602429ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[ 9602690ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[10433785ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integrations/ghl/readiness/:0
+[10433789ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/integration:0
+[10581005ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[10581006ms] [WARNING] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(0) or use aspect(undefined) to control the
+       height and width. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/index-C5lO_wXW.js:17
+[10789151ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[10789151ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://dev.sre-shaz-lo.rezolvecloud.com/assets/hooks-BOFhIjbe.js:54
+[11554483ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://dev.sre-shaz-lo.rezolvecloud.com/api/v1/interviews/screening-results/?page=1&page_size=50&min_score=0&max_score=100:0
