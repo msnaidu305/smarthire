@@ -11,7 +11,7 @@ test('Verify user login', async ({page}) => {
 
     const loginPage = new LoginPage(page);
 
-    await loginPage.navigate('https://dev.smarthire.rezolvecloud.com/login');
+    await loginPage.navigate(logindata.BASE_URL);
 
     await loginPage.login(
         //loginData.validUser.email, 

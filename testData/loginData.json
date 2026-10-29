@@ -2,7 +2,9 @@
 {
   "validUser": {
     "email":"" ,
-    "password": ""
+    "password": "" ,
+    "workemail": "",
+    "Pass": ""  
   }
  
 }
